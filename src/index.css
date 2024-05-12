@@ -1,0 +1,538 @@
+*{
+  color: white;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 0vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.navbar{
+  display: flex;
+  position: fixed;
+  flex-grow: row;
+  justify-content: center;
+  width: 80vw;
+  z-index: 999;
+  }
+
+.navbar ul{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 66px;
+  box-shadow: 0px 20px 100px black
+  
+}
+
+.navbar a{
+  background-color: black;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-size: 40px;
+  padding: 10px 25px;
+}
+
+.navbar a:hover{
+  background-color: darkred;
+  color: white;
+  transform: scale(1.1);
+  transition: 0.2s ease-out;
+}
+
+.navbar ul li{
+  list-style: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#padding-text{
+  padding-left: 300px;
+}
+
+.hero-section{
+  display: flex;
+  flex-direction: row;
+  padding-top: 130px;
+}
+
+.hero-section-left{
+  width: 50vw;
+  margin-right: 25px;
+}
+
+.hero-section-left h1{
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.hero-section-left p{
+  color: white;
+  font-size: 27px;
+  text-align: justify;
+  line-height: 60px;
+}
+
+.join-button{
+  padding: 25px 50px;
+  font-size: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.url{
+  text-decoration: none;
+}
+
+.join-button:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-color: red;
+}
+
+.hero-section-right{
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+}
+
+.hero-section-right img{
+  border-radius: 15px;
+  height: 30vw;
+  border: none;
+}
+
+.about{
+  margin-bottom: 80px;
+  padding-top: 25px;
+}
+
+.pictures{
+  display: flex;
+  flex-grow: row;
+  justify-content: space-between;
+}
+.about img{
+  height: 12vw;
+  border-radius: 20px;
+}
+
+.about h1{
+  padding-top: 60px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.about p{
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.raiding{
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.raiding h1{
+  padding-top: 60px;
+}
+
+.raiding-description{
+  width: 35vw;
+}
+
+.raid-days{
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-left: 170px;
+  text-align: center;
+}
+
+.raid-days div{
+  margin: 15px;
+  font-size: 25px;
+  border: 2px solid darkred;
+  border-radius: 10px;
+  box-shadow: 0px 0px 100px darkred;
+  padding: 10px;
+}
+
+.raid-days div p{
+  font-size: 20px;
+  text-align: center;
+}
+
+.raid-days div h2{
+  margin-top: 40px;
+}
+
+h1{
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.raiding p{
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.recruitment{
+  padding-top: 15px;
+  margin-bottom: 100px;
+}
+
+.recruitment h1{
+  padding-top: 60px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.recruitment p{
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.platforms{
+  padding-top: 15px;
+}
+
+.platforms h1{
+  padding-top: 60px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.platforms p{
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.card-platforms{
+  width: 150px;
+  display: inline-table;
+  padding: 20px 29px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.platforms-logo{
+  height: 150px;
+  width: 150px;
+  box-shadow: 0px 0px 100px darkred;
+}
+
+.card-platforms h2{
+  font-size: 18px;
+}
+
+.card-platforms:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.card-platforms:hover h2{
+  color: darkred;
+}
+
+.card-platforms img{
+  border-radius: 75px;
+}
+
+.streamers h1{
+  padding-top: 60px;
+}
+
+.card-streamers{
+  display: inline-table;
+  padding-left: 30px;
+  width: 150px;
+  text-align: center;
+}
+
+.twitchstreamers{
+  height: 200px;
+  border-radius: 100px;
+}
+
+.card-streamers h2{
+  display: flex;
+  justify-content: center;
+}
+
+.card-streamers:hover{
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.card-streamers:hover h2{
+  color: red;
+}
+
+.streams{
+  display: flex;
+  flex-grow: column;
+  margin-bottom: 150px;
+}
+
+.services{
+  margin-bottom: 100px;
+}
+
+.services h1{
+  padding-top: 60px;
+}
+
+.streamers{
+  padding-top: 15px;
+}
+
+.streamers-left{
+  display: table;
+  width: 40vw;
+}
+
+.video{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.youtube-video{
+  padding: 20px 30px;
+}
+
+.youtube-videos{
+  margin-bottom: 100px;
+}
+
+.youtube-videos h2{
+  font-size: 33px;
+}
+
+.streamers-left p{
+  font-size: 25px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+.streamers-whole{
+  display: flex;
+  flex-grow: row;
+  margin-bottom: 50px;
+}
+
+.streamers-right{
+  margin-left: 120px;
+}
+
+.twitchlogo{
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.services{
+  padding-top: 5px;
+}
+
+.services h1{
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.services p{
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.contact h1{
+  padding-top: 120px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.contact p{
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.contact-cards{
+  display: flex;
+  flex-grow: row;
+  justify-content: space-between;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.card-contact{
+  display: flex;
+  justify-content: center;
+}
+
+.discordlogo{
+  height: 20px;
+  border-radius: 10px;
+}
+
+.card {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px grey;
+  padding: 15px;
+  margin: 15px;
+  max-width: 250px;
+}
+
+.card:hover{
+  border-color: darkred;
+  box-shadow: 3px 3px 3px darkred;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.recruitment .join-button{
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-section-left .join-button{
+  margin-left: 11vw;
+}
+
+.card:hover p{
+  color: red;
+}
+
+.card img{
+  border-radius: 75px;
+}
+
+.card p{
+  font-size: 25px;
+}
+
+.footer{
+  display: block;
+  bottom: 0px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.card-services{
+  display: inline-table;
+  text-align: center;
+  justify-content: center;
+  width: 250px;
+  padding: 30px;
+}
+
+.card-services h2{
+  font-size: 30px;
+}
+
+.card-services h3{
+  font-size: 25px;
+}
+.card-services:hover{
+  transition: 0.2s ease;
+  transform: scale(1.1);
+}
+
+.box-services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.card-services img{
+  border-radius: 125px;
+  box-shadow: 0px 0px 100px darkred;
+}
+
+.card-services button{
+  font-size: 25px;
+  padding: 7px 20px;
+  border: none;
+  background-color: darkred;
+  border-radius: 50px;
+}
+
+.card-services button:hover{
+  transition: 0.2s ease;
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: red;
+}
+
+.cart{
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
+.cart button{
+  font-size: 25px;
+  padding: 7px 20px;
+  border: none;
+  background-color: darkred;
+  border-radius: 50px;
+}
+
+.cart button:hover{
+  transition: 0.2s ease;
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: red;
+}
+#questions{
+  height: 200px;
+  background-color: aqua;
+}
+
+#questions button{
+  font-size: 25px;
+  padding: 7px 25px;
+  color: white;
+  background-color: darkred;
+  border: none;
+  border-radius: 7px;
+}
+
+.gold-icon{
+  height: 20px;
+}
+
+.price-and-gold{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  
+}
+
+
