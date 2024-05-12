@@ -1,5 +1,4 @@
 import React from "react";
-import goldIcon from "./assets/gold-icon.png";
 
 const boostServices = [
   {
@@ -51,7 +50,7 @@ const CardBoostServicesListItem = ({ name, price }) => {
       <h2>{name}</h2>
       <div className="price-and-gold">
         <h3>
-          {price} <img className="gold-icon" src={goldIcon}></img>
+          {price} <img className="gold-icon" src="/gold-icon.png"></img>
         </h3>
       </div>
       <button>Add</button>

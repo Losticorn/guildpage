@@ -1,5 +1,4 @@
 import React from "react";
-import guildBanner from "./assets/guild-banner-cropped.jpg";
 import JoinButton from "./Join-button";
 
 function Hero() {
@@ -17,7 +16,7 @@ function Hero() {
         <JoinButton />
       </div>
       <div className="hero-section-right">
-        <img src={guildBanner} alt="guild-banner"></img>
+        <img src="/guild-banner-cropped.jpg" alt="guild-banner"></img>
       </div>
     </section>
   );

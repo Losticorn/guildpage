@@ -1,5 +1,4 @@
 import React from "react";
-import discordLogo from "/public/discordlogo.jpg";
 
 const characters = [
   {
@@ -48,7 +47,7 @@ const CardListItem = (props) => {
       <h3>{props.character.role}</h3>
       <div className="card-contact">
         <p>
-          <img className="discordlogo" src={discordLogo}></img>{" "}
+          <img className="discordlogo" src="/discordlogo.jpg"></img>{" "}
           {props.character.discord}
         </p>
       </div>

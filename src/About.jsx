@@ -1,8 +1,4 @@
 import React from "react";
-import RaidsPicture from "./assets/raiding_2.png";
-import MythicPlus from "./assets/mythicplus.png";
-import PvP from "./assets/pvp.png";
-import Mounts from "./assets/mounts.png";
 
 function About() {
   return (
@@ -18,10 +14,10 @@ function About() {
           guild apart is its diverse core beyond just the mythic raiding team.
         </p>
         <div className="pictures">
-          <img src={RaidsPicture}></img>
-          <img src={MythicPlus}></img>
-          <img src={PvP}></img>
-          <img src={Mounts}></img>
+          <img src="/raiding_2.png"></img>
+          <img src="/mythicplus.png"></img>
+          <img src="/pvp.png"></img>
+          <img src="/mounts.png"></img>
         </div>
       </div>
     </section>
