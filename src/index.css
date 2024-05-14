@@ -481,7 +481,7 @@ h1{
   border: none;
   background-color: darkred;
   border-radius: 50px;
-}
+  }
 
 .card-services button:hover{
   transition: 0.2s ease;
@@ -502,6 +502,8 @@ h1{
   border: none;
   background-color: darkred;
   border-radius: 50px;
+
+
 }
 
 .cart button:hover{
@@ -510,9 +512,9 @@ h1{
   cursor: pointer;
   background-color: red;
 }
+
 #questions{
-  height: 200px;
-  background-color: aqua;
+  padding-top: 80px; 
 }
 
 #questions button{
@@ -535,4 +537,18 @@ h1{
   
 }
 
+.services-button{
+  padding: 25px 50px;
+  font-size: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+  margin-left: 50%;
+  transform: translate(-50%, 10%);
+}
 
+.generated-div{
+
+}

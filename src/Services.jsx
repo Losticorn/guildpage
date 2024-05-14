@@ -1,4 +1,5 @@
 import React from "react";
+import GenerateDIV from "./GenerateDIV-version-2";
 import CardBoostServices from "./Card-services";
 
 function Services() {
@@ -6,10 +7,8 @@ function Services() {
     <section id="services" className="services">
       <h1>Services</h1>
       <p>Our guild can provide you with all kinds of services. You pick!</p>
-      <CardBoostServices></CardBoostServices>
-      <div className="cart">
-        <h2>Your cart is empty!</h2>
-        <button>Order</button>
+      <div>
+        <GenerateDIV></GenerateDIV>
       </div>
     </section>
   );
