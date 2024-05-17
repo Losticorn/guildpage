@@ -19,7 +19,6 @@ body{
   position: fixed;
   flex-grow: row;
   justify-content: center;
-  width: 80vw;
   z-index: 999;
   }
 
@@ -28,8 +27,7 @@ body{
   text-align: center;
   justify-content: center;
   height: 66px;
-  box-shadow: 0px 20px 100px black
-  
+  box-shadow: 0px 0px 100px black;
 }
 
 .navbar a{
@@ -37,8 +35,8 @@ body{
   text-decoration: none;
   cursor: pointer;
   color: white;
-  font-size: 40px;
-  padding: 10px 25px;
+  font-size: 35px;
+  padding: 15px 25px;
 }
 
 .navbar a:hover{
