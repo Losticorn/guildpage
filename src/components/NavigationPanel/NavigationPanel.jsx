@@ -33,11 +33,6 @@ const navigationItems = [
   },
   {
     id: 7,
-    name: "Services",
-    navigation: "services",
-  },
-  {
-    id: 8,
     name: "Contact",
     navigation: "contact",
   },

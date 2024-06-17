@@ -1,5 +1,6 @@
 import React from "react";
 import GenerateDIV from "./GenerateDIV";
+import JoinButton from "./Join-button";
 
 function Recruitment() {
   return (
@@ -17,7 +18,7 @@ function Recruitment() {
         application. We'll review it promptly and either provide words of
         encouragement or extend an invitation for a trial.
       </p>
-      <GenerateDIV></GenerateDIV>
+      <JoinButton></JoinButton>
     </section>
   );
 }

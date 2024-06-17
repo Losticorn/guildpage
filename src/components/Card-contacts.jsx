@@ -15,24 +15,18 @@ const characters = [
   },
   {
     id: 3,
-    name: "Unicorn",
-    role: "Healing officer",
-    discord: "unicorn6421",
-  },
-  {
-    id: 4,
     name: "Silver",
-    role: "Officer",
+    role: "Healing officer",
     discord: "silverskips",
   },
   {
-    id: 5,
+    id: 4,
     name: "Kazz",
     role: "Officer",
     discord: "kazz90",
   },
   {
-    id: 6,
+    id: 5,
     name: "Buffed",
     role: "Officer",
     discord: "trihard",

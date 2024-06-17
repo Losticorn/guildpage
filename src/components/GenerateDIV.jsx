@@ -37,14 +37,14 @@ function GenerateDIV() {
 
   return (
     <div class="generated-div">
-      <a
-        href="https://apply.wowaudit.com/eu/ragnaros/dirty-zuk-and-the-boyz/main"
-        target="_blank"
-      >
-        <button className="join-button" onClick={handleButtonClick}>
+      <button className="join-button" onClick={handleButtonClick}>
+        <a
+          href="https://apply.wowaudit.com/eu/ragnaros/dirty-zuk-and-the-boyz/main"
+          target="_blank"
+        >
           Join us!
-        </button>
-      </a>
+        </a>
+      </button>
     </div>
   );
 }

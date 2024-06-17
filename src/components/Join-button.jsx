@@ -1,5 +1,4 @@
 import React from "react";
-import GenerateDIV from "./GenerateDIV";
 
 /*
 function JoinButton() {
@@ -16,12 +15,14 @@ function JoinButton() {
 function JoinButton() {
   return (
     <div className="questions">
-      <a
-        href="https://apply.wowaudit.com/eu/ragnaros/dirty-zuk-and-the-boyz/main?preview"
-        target="_blank"
-      >
-        <button className="join-button">Join us!</button>
-      </a>
+      <button className="join-button">
+        <a
+          href="https://apply.wowaudit.com/eu/ragnaros/dirty-zuk-and-the-boyz/main?preview"
+          target="_blank"
+        >
+          Join us!
+        </a>
+      </button>
     </div>
   );
 }

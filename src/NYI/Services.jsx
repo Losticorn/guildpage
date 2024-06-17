@@ -1,6 +1,6 @@
 import React from "react";
-import GenerateDIV from "./GenerateDIV-version-2";
-import CardBoostServices from "./Card-services";
+import GenerateDIV from "../GenerateDIV-version-2";
+import CardBoostServices from "../Card-services";
 
 function Services() {
   return (

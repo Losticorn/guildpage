@@ -12,15 +12,33 @@ body{
   margin-top: 0vw;
   margin-left: 10vw;
   margin-right: 10vw;
+  width: 80vw;
 }
 
 .navbar{
   display: flex;
-  position: fixed;
   flex-grow: row;
   justify-content: center;
+  margin-top: 25px;
   z-index: 999;
+}
+
+@media (max-width: 600px){
+  .navbar li{
+    display: block;
+    position: relative;
+    flex-wrap: wrap;
+    width: 80vw;
   }
+}
+
+@media (max-width: 600px){
+  .navbar li:not(:first-child) {display: none;}
+  .navbar li.icon {
+    float: right;
+    display: block;
+  }
+}
 
 .navbar ul{
   display: flex;
@@ -31,11 +49,10 @@ body{
 }
 
 .navbar a{
-  background-color: black;
   text-decoration: none;
   cursor: pointer;
   color: white;
-  font-size: 35px;
+  font-size: 40px;
   padding: 15px 25px;
 }
 
@@ -44,6 +61,7 @@ body{
   color: white;
   transform: scale(1.1);
   transition: 0.2s ease-out;
+  border-radius: 10px;
 }
 
 .navbar ul li{
@@ -52,23 +70,27 @@ body{
   margin-top: 10px;
 }
 
-#padding-text{
-  padding-left: 300px;
-}
-
 .hero-section{
   display: flex;
   flex-direction: row;
-  padding-top: 130px;
+  padding-top: 100px;
 }
 
 .hero-section-left{
-  width: 50vw;
   margin-right: 25px;
 }
 
+@media (max-width: 600px) { 
+  .hero-section-left{
+    width: 80vw;
+  }
+  .hero-section-left h1{
+    font-size: 50px;
+  }
+} 
+
 .hero-section-left h1{
-  font-size: 80px;
+  font-size: 120px;
   color: white;
   font-weight: bold;
   margin-top: 0px;
@@ -80,6 +102,7 @@ body{
   font-size: 27px;
   text-align: justify;
   line-height: 60px;
+  width: auto;
 }
 
 .join-button{
@@ -105,19 +128,29 @@ body{
 
 .hero-section-right{
   display: flex;
-  width: 50vw;
+  width: 70vw;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-section-right img{
   border-radius: 15px;
   height: 30vw;
+  width: 100%;
   border: none;
 }
+
+@media (max-width: 600px) { .hero-section-right{display: none;}} 
 
 .about{
   margin-bottom: 80px;
   padding-top: 25px;
+}
+
+@media (max-width: 600px) {
+  .about p{
+    width: auto;
+  }
 }
 
 .pictures{
@@ -125,10 +158,13 @@ body{
   flex-grow: row;
   justify-content: space-between;
 }
+
 .about img{
   height: 12vw;
   border-radius: 20px;
 }
+
+@media (max-width: 600px) { .pictures {display: none}}
 
 .about h1{
   padding-top: 60px;
@@ -147,12 +183,20 @@ body{
   margin-bottom: 120px;
 }
 
-.raiding h1{
-  padding-top: 60px;
+@media (max-width: 600px) {
+  .raiding
+  {
+    display: flex; 
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+  .raiding p{
+    width: auto;
+  }
 }
 
-.raiding-description{
-  width: 35vw;
+.raiding h1{
+  padding-top: 60px;
 }
 
 .raid-days{
@@ -163,22 +207,38 @@ body{
   text-align: center;
 }
 
+@media (max-width: 600px){
+  .raid-days{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    width: 80vw;
+  }
+  .raid-days div{
+    width: 80vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .raid-days h2, h3, p{
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .raid-days div{
   margin: 15px;
   font-size: 25px;
   border: 2px solid darkred;
   border-radius: 10px;
-  box-shadow: 0px 0px 100px darkred;
   padding: 10px;
 }
 
 .raid-days div p{
   font-size: 20px;
   text-align: center;
-}
-
-.raid-days div h2{
-  margin-top: 40px;
 }
 
 h1{
@@ -197,6 +257,12 @@ h1{
   margin-bottom: 100px;
 }
 
+@media (max-width: 600px){
+  .recruitment p{
+    width: auto;
+  }
+}
+
 .recruitment h1{
   padding-top: 60px;
   font-size: 60px;
@@ -211,6 +277,12 @@ h1{
 
 .platforms{
   padding-top: 15px;
+}
+
+@media (max-width: 600px){
+  .platforms p{
+    width: auto;
+  }
 }
 
 .platforms h1{
@@ -288,20 +360,43 @@ h1{
 
 .streams{
   display: flex;
-  flex-grow: column;
   margin-bottom: 150px;
 }
 
-.services{
-  margin-bottom: 100px;
-}
-
-.services h1{
-  padding-top: 60px;
+@media (max-width: 600px){
+  .streamers p, h1{
+    width: 80vw;
+  }
+  .streamers h1{
+    font-size: 50px;
+  }
+  .streamers ul{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card-streamers{
+    padding: 0;
+  }
 }
 
 .streamers{
   padding-top: 15px;
+}
+
+@media (max-width: 600px){
+  .streamers, p{
+    width: 80vw;
+  }
+  .streamers-whole{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .streamers-left{
@@ -319,8 +414,15 @@ h1{
   padding: 20px 30px;
 }
 
-.youtube-videos{
-  margin-bottom: 100px;
+@media (max-width: 600px){
+  .youtube-videos, .youtube-video, .video{
+    padding: 0;
+    margin: 0;
+  }
+  .youtube-video{
+    transform: scale(0.7);
+    margin: -50px;
+  }
 }
 
 .youtube-videos h2{
@@ -349,25 +451,16 @@ h1{
   margin: 0;
 }
 
-.services{
-  padding-top: 5px;
-}
-
-.services h1{
-  font-size: 60px;
-  font-weight: bold;
-}
-
-.services p{
-  font-size: 25px;
-  text-align: justify;
-  line-height: 40px;
-}
-
 .contact h1{
   padding-top: 120px;
   font-size: 60px;
   font-weight: bold;
+}
+
+@media (max-width: 600px){
+  .contact h1{
+    padding-top: 50px;
+  }
 }
 
 .contact p{
@@ -379,9 +472,7 @@ h1{
 .contact-cards{
   display: flex;
   flex-grow: row;
-  justify-content: space-between;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  justify-content: space-evenly;
 }
 
 .card-contact{
@@ -399,7 +490,6 @@ h1{
   text-align: center;
   border: 1px solid grey;
   border-radius: 10px;
-  box-shadow: 3px 3px 3px grey;
   padding: 15px;
   margin: 15px;
   max-width: 250px;
@@ -407,7 +497,7 @@ h1{
 
 .card:hover{
   border-color: darkred;
-  box-shadow: 3px 3px 3px darkred;
+  box-shadow: 0px 0px 0px darkred;
   transform: scale(1.1);
   transition: 0.2s;
 }
@@ -415,6 +505,13 @@ h1{
 .recruitment .join-button{
   margin-left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px){
+  .recruitment .join-button{
+    width: 100%;
+    margin-top: 80px;
+  }
 }
 
 .hero-section-left .join-button{
@@ -441,113 +538,10 @@ h1{
   margin-bottom: 20px;
 }
 
-.card-services{
-  display: inline-table;
-  text-align: center;
-  justify-content: center;
-  width: 250px;
-  padding: 30px;
-}
 
-.card-services h2{
-  font-size: 30px;
-}
 
-.card-services h3{
-  font-size: 25px;
-}
-.card-services:hover{
-  transition: 0.2s ease;
-  transform: scale(1.1);
-}
-
-.box-services{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 100px;
-}
-
-.card-services img{
-  border-radius: 125px;
-  box-shadow: 0px 0px 100px darkred;
-}
-
-.card-services button{
-  font-size: 25px;
-  padding: 7px 20px;
-  border: none;
-  background-color: darkred;
-  border-radius: 50px;
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
   }
-
-.card-services button:hover{
-  transition: 0.2s ease;
-  transform: scale(1.2);
-  cursor: pointer;
-  background-color: red;
-}
-
-.cart{
-  display: block;
-  text-align: center;
-  justify-content: center;
-}
-
-.cart button{
-  font-size: 25px;
-  padding: 7px 20px;
-  border: none;
-  background-color: darkred;
-  border-radius: 50px;
-
-
-}
-
-.cart button:hover{
-  transition: 0.2s ease;
-  transform: scale(1.2);
-  cursor: pointer;
-  background-color: red;
-}
-
-#questions{
-  padding-top: 80px; 
-}
-
-#questions button{
-  font-size: 25px;
-  padding: 7px 25px;
-  color: white;
-  background-color: darkred;
-  border: none;
-  border-radius: 7px;
-}
-
-.gold-icon{
-  height: 20px;
-}
-
-.price-and-gold{
-  display: flex;
-  position: relative;
-  justify-content: center;
-  
-}
-
-.services-button{
-  padding: 25px 50px;
-  font-size: 40px;
-  border: none;
-  border-radius: 10px;
-  background-color: darkred;
-  color: white;
-  cursor: pointer;
-  margin-left: 50%;
-  transform: translate(-50%, 10%);
-  margin-top: 100px;
-}
-
-.generated-div{
-
 }
