@@ -8,9 +8,9 @@ function Hero() {
         <h1>Dirty Zuk & The Boyz</h1>
         <p>
           Are you a World of Warcraft fan? <br /> Would you like to step up your
-          game experience? <br /> Are you up to playing with like-minded people?{" "}
-          <br /> You are at the right place! <br /> Come join us and get your
-          dirt on!
+          gaming experience? <br /> Are you up to playing with like-minded
+          people? <br /> You are at the right place! <br /> Come join us and get
+          your dirt on!
         </p>
         <JoinButton />
       </div>
