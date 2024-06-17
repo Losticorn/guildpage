@@ -15,6 +15,15 @@ body{
   width: 80vw;
 }
 
+@media(max-width: 600px){
+  body{
+    max-width: 100vw;
+    width: 100%;
+    margin: 0;
+    padding: 10vw;
+  }
+}
+
 .url{
   text-decoration: none;
 }
@@ -33,9 +42,8 @@ body{
 }
 
 @media (max-width: 600px){
-  .navbar li{
-    display: flex;
-    flex-wrap: wrap;
+  .navbar {
+    display: none;
   }
 }
 
@@ -83,14 +91,18 @@ body{
   margin-left: 11vw;
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 600px) {
+  .hero-section{
+    padding: 0;
+    width: 100vw;
+  } 
   .hero-section-left{
     width: 100vw;
     margin: 0;
     padding: 0;
   }
   .hero-section-left h1{
-    font-size: 50px;
+    font-size: 80px;
   }
   .hero-section-left .join-button{
     margin-left: 0vw;
@@ -203,7 +215,7 @@ body{
   {
     display: flex; 
     flex-wrap: wrap;
-    width: 80vw;
+    width: 100vw;
   }
   .raiding p{
     width: auto;
@@ -228,7 +240,7 @@ body{
     margin: 0;
     padding: 0;
     justify-content: center;
-    width: 80vw;
+    width: 100vw;
   }
   .raid-days div{
     width: 100vw;
@@ -270,6 +282,9 @@ h1{
   .recruitment p{
     width: auto;
   }
+  .recruitment h1{
+    width: 100vw;
+  }
 }
 
 .recruitment h1{
@@ -291,6 +306,14 @@ h1{
 @media (max-width: 600px){
   .platforms p{
     width: auto;
+  }
+  .platforms h1{
+    width: auto;
+  }
+  .platforms ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: ;
   }
 }
 
@@ -355,6 +378,27 @@ h1{
     display: flex;
     margin-left: 0px;
   }
+  .streamers h1{
+    background-color: aliceblue;
+    width: 100vw;
+  }
+  .streamers p{
+    background-color: aqua;
+    width: 100vw;
+  }
+  .streamers-whole{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+  }
+  .streamers ul{
+    display: flex;
+    justify-content: center;
+  }
+  .streamers-right{
+    margin: 0;
+  }
 }
 
 .twitchstreamers{
@@ -382,20 +426,11 @@ h1{
 }
 
 @media (max-width: 600px){
-  .streamers p, h1{
-    width: 80vw;
-  }
+
   .streamers h1{
     font-size: 50px;
   }
-  .streamers ul{
-    width: auto;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+
   .card-streamers{
     padding: 0;
   }
@@ -406,9 +441,6 @@ h1{
 }
 
 @media (max-width: 600px){
-  .streamers, p{
-    width: 80vw;
-  }
   .streamers-whole{
     display: flex;
     justify-content: center;
@@ -466,10 +498,6 @@ h1{
   display: flex;
   flex-grow: row;
   margin-bottom: 50px;
-}
-
-.streamers-right{
-  margin-left: 120px;
 }
 
 .twitchlogo{
