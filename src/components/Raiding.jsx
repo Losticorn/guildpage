@@ -8,7 +8,8 @@ function Raiding() {
         <div className="raiding-description">
           <p>
             Raiding is the primary focus of our guild, so we place special
-            emphasis on its preparation. Our guild operates as a 2-day raiding
+            emphasis on its preparation. Our guild operates as a{" "}
+            <span class="highlight-word-red"> 2-day raiding </span>
             team, dedicating 6 hours to progress each week. Given our time
             constraints, all preparation occurs outside of raiding hours.
             Officers work diligently to create raid plans, MRT notes, healing

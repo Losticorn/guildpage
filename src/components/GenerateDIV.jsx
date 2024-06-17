@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Questionaire from "./Questionaire.jsx";
+import Questionaire from "../NYI/Questionaire";
 
 //generate div which will contain paragpraph for question and response area (no buttons), filling will be done via function
 
@@ -37,14 +37,14 @@ function GenerateDIV() {
 
   return (
     <div class="generated-div">
-      <button className="join-button" onClick={handleButtonClick}>
-        <a
-          href="https://apply.wowaudit.com/eu/ragnaros/dirty-zuk-and-the-boyz/main"
-          target="_blank"
-        >
+      <a
+        href="https://apply.wowaudit.com/eu/ragnaros/dirty-zuk-and-the-boyz/main"
+        target="_blank"
+      >
+        <button className="join-button" onClick={handleButtonClick}>
           Join us!
-        </a>
-      </button>
+        </button>
+      </a>
     </div>
   );
 }
