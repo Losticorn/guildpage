@@ -18,9 +18,8 @@ function JoinButton() {
       <a
         href="https://apply.wowaudit.com/eu/ragnaros/dirty-zuk-and-the-boyz/main?preview"
         target="_blank"
-      >
-        Join us!
-      </a>
+      ></a>
+      Join us!
     </button>
   );
 }
