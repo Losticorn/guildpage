@@ -1,5 +1,4 @@
 import React from "react";
-import GenerateDIV from "./GenerateDIV";
 import JoinButton from "./Join-button";
 
 function Recruitment() {
