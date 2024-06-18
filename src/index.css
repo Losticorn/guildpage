@@ -209,9 +209,11 @@ body{
 @media (max-width: 600px) { 
   .about h1{
     font-size: 40px;
+    text-align: left;
   }
   .about p{
     font-size: 20px;
+    text-align: left;
   }
 }
 
@@ -246,6 +248,7 @@ body{
   .raiding p{
     width: auto;
     font-size: 20px;
+    text-align: left;
   }
 }
 
@@ -303,8 +306,8 @@ h1{
 
 .recruitment p{
   font-size: 25px;
-  text-align: justify;
   line-height: 40px;
+  text-align: left;
 }
 
 .recruitment{
@@ -385,6 +388,7 @@ h1{
   .platforms p{
     width: 80vw;
     font-size: 20px;
+    text-align: left;
   }
   .platforms h1{
     width: 80vw;
@@ -446,7 +450,7 @@ h1{
 .streamers-left p{
   font-size: 25px;
   line-height: 40px;
-  text-align: justify;
+  text-align: left;
 }
 
 .streamers-whole{
@@ -603,6 +607,7 @@ h1{
   .contact p{
     font-size: 20px;
     line-height: 40px;
+    text-align: left;
   }
   .contact-cards ul{
     display: flex;
