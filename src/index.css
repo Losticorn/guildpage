@@ -101,6 +101,8 @@ body{
   .hero-section-left .join-button{
     margin-left: 0vw;
     width: 80vw;
+    font-size: 30px;
+    padding: 10px 10px;
   }
 } 
 
@@ -124,7 +126,7 @@ body{
   color: white;
   font-size: 27px;
   text-align: justify;
-  line-height: 50px;
+  line-height: 35px;
   width: auto;
 }
 
@@ -204,6 +206,15 @@ body{
   line-height: 40px;
 }
 
+@media (max-width: 600px) { 
+  .about h1{
+    font-size: 40px;
+  }
+  .about p{
+    font-size: 20px;
+  }
+}
+
 .raiding{
   display: flex;
 }
@@ -212,6 +223,15 @@ body{
   margin-top: 100px;
 }
 
+.raiding h1{
+  padding-top: 60px;
+}
+
+.raiding p{
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
+}
 
 @media (max-width: 600px) {
   .raiding
@@ -220,13 +240,13 @@ body{
     flex-wrap: wrap;
     width: 80vw;
   }
+  .raiding h1{
+    font-size: 40px;
+  }
   .raiding p{
     width: auto;
+    font-size: 20px;
   }
-}
-
-.raiding h1{
-  padding-top: 60px;
 }
 
 .raid-days{
@@ -275,21 +295,6 @@ h1{
   font-weight: bold;
 }
 
-.raiding p{
-  font-size: 25px;
-  text-align: justify;
-  line-height: 40px;
-}
-
-@media (max-width: 600px){
-  .recruitment p{
-    width: auto;
-  }
-  .recruitment h1{
-    width: 80vw;
-  }
-}
-
 .recruitment h1{
   padding-top: 60px;
   font-size: 60px;
@@ -302,22 +307,40 @@ h1{
   line-height: 40px;
 }
 
-.platforms{
-  margin-top: 15px;
+.recruitment{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.recruitment .join-button{
+  margin-top: 40px;
+  margin-left: 600px;
+  width: 300px;
+}
 @media (max-width: 600px){
-  .platforms p{
+  .recruitment p{
+    width: auto;
+    font-size: 20px;
+  }
+  .recruitment h1{
     width: 80vw;
+    font-size: 40px;
   }
-  .platforms h1{
+}
+@media (max-width: 600px){
+  .recruitment .join-button{
+    margin-left: 0vw;
     width: 80vw;
+    font-size: 30px;
+    padding: 10px 10px;
   }
-  .platforms ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+}
+
+/* PLATFORMS */
+
+.platforms{
+  margin-top: 15px;
 }
 
 .platforms h1{
@@ -343,7 +366,6 @@ h1{
 .platforms-logo{
   height: 150px;
   width: 150px;
-
 }
 
 .card-platforms h2{
@@ -353,15 +375,36 @@ h1{
 .card-platforms:hover{
   transform: scale(1.1);
   transition: 0.3s;
-
 }
-
 
 .card-platforms img{
   border-radius: 75px;
-  
 }
 
+@media (max-width: 600px){
+  .platforms p{
+    width: 80vw;
+    font-size: 20px;
+  }
+  .platforms h1{
+    width: 80vw;
+    font-size: 40px;
+  }
+  .platforms ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .card-platforms{
+    padding: 10px 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* STREAMING */
 .streamers h1{
   padding-top: 60px;
 }
@@ -372,18 +415,9 @@ h1{
   text-align: center;
   margin-left: 30px;
 }
-
-
-
 .twitchstreamers{
   height: 200px;
   border-radius: 100px;
-}
-
-@media (max-width: 600px){
-  .twitchstreamers{
-    height: 150px;
-  }
 }
 
 .card-streamers h2{
@@ -401,103 +435,18 @@ h1{
   margin-bottom: 150px;
 }
 
-@media (max-width: 600px){
-
-  .streamers h1{
-    font-size: 50px;
-  }
-}
-
 .streamers{
   padding-top: 15px;
-}
-
-@media (max-width: 600px){
-  .streamers-whole{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    width: 80vw;
-  }
 }
 
 .streamers-left{
   display: table;
   width: 40vw;
 }
-
-@media(max-width: 600px){
-  .card-streamers{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .card-streamers h2{
-    margin: 0;
-    padding: 0;
-  }
-
-  .streamers h1{
-    width: 80vw;
-  }
-  .streamers p{
-    width: 80vw;
-  }
-  .streamers ul{
-    display: flex;
-    justify-content: center;
-    width: 80vw;
-    margin: 0;
-    padding: 0;
-  }
-  .streamers-right{
-    margin: 0;
-    width: 80vw;
-  }
-  .twitchstreamers{
-    margin: 0;
-    padding: 0;
-  }
-}
-.video{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.youtube-video{
-  padding: 10px 15px;
-}
-
-@media (max-width: 600px){
-  .video{
-    padding: 0;
-    margin: 0;
-  }
-  .youtube-video{
-    transform: scale(0.7);
-    margin: -50px;
-  }
-}
-
-.youtube-videos h2{
-  font-size: 33px;
-}
-
 .streamers-left p{
   font-size: 25px;
   line-height: 40px;
   text-align: justify;
-}
-
-@media (max-width: 600px){
-  .card-streamers {
-    display: inline-table;
-    flex-wrap: wrap;
-    margin: 15px;
-  }
 }
 
 .streamers-whole{
@@ -512,15 +461,93 @@ h1{
   margin: 0;
 }
 
-.contact h1{
-  font-size: 60px;
-  font-weight: bold;
+@media(max-width: 600px){
+  .card-streamers{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .card-streamers h2{
+    margin: 0;
+    padding: 0;
+  }
+  .streamers h1{
+    width: 80vw;
+    font-size: 40px;
+  }
+  .streamers p{
+    width: 80vw;
+    font-size: 20px;
+  }
+  .streamers ul{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+  }
+  .streamers-right{
+    margin: 0;
+    width: 80vw;
+  }
+  .streamers-left p{
+    font-size: 20px;
+  }
+  .twitchstreamers{
+    margin: 0;
+    padding: 0;
+  }
+  .twitchstreamers{
+    height: 150px;
+  }
+  .streamers-whole{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+  }
+  .card-streamers {
+      display: inline-table;
+      flex-wrap: wrap;
+  }
+  .streamers {
+    margin-bottom: 60px;
+  }
+}
+
+/* YOUTUBE */
+
+.video{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.youtube-video{
+  padding: 10px 15px;
+}
+.youtube-videos h2{
+  font-size: 33px;
 }
 
 @media (max-width: 600px){
-  .contact h1{
-    padding-top: 50px;
+  .video{
+    padding: 0;
+    margin: 0;
   }
+  .youtube-video{
+    transform: scale(0.7);
+    margin: -50px;
+  }
+}
+
+/* CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS */
+
+.contact h1{
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .contact p{
@@ -538,14 +565,6 @@ h1{
 .card-contact{
   display: flex;
   justify-content: center;
-}
-
-@media(max-width: 600px){
-  .contact-cards ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 
 .discordlogo{
@@ -567,27 +586,6 @@ h1{
   transition: 0.2s;
 }
 
-.recruitment{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.recruitment .join-button{
-  margin-top: 40px;
-  margin-left: 600px;
-  width: 300px;
-
-}
-
-@media (max-width: 600px){
-  .recruitment .join-button{
-    width: 100%;
-    margin-top: 40px;
-    margin-left: 0px;
-  }
-}
-
 .card img{
   border-radius: 75px;
 }
@@ -596,18 +594,44 @@ h1{
   font-size: 25px;
 }
 
+@media (max-width: 600px){
+  .contact h1{
+    padding: 0;
+    margin: 20px 0px;
+    font-size: 40px;
+  }
+  .contact p{
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .contact-cards ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  .card{
+    transform: scale(0.8);
+    margin: 0;
+    padding: 0;
+  }
+  .card img{
+    transform: scale(0.7);
+  }
+  .card h2{
+    font-size: 30px;
+    padding: 5px;
+    margin: 0;
+  }
+  .card h3{
+    font-size: 20px;
+  }
+}
+
 .footer{
   display: block;
   bottom: 0px;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 20px;
-}
-
-
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: black;
-  }
 }
