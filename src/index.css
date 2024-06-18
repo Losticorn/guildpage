@@ -209,6 +209,7 @@ body{
   margin-top: 100px;
 }
 
+
 @media (max-width: 600px) {
   .raiding
   {
@@ -575,6 +576,7 @@ h1{
   .recruitment .join-button{
     width: 100%;
     margin-top: 40px;
+    margin-left: 0px;
   }
 }
 
