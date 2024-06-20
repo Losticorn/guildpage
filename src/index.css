@@ -23,6 +23,7 @@ body{
 
 .url{
   text-decoration: none;
+  width: 221px;
 }
 
 .highlight-word-red{
@@ -439,14 +440,11 @@ h1{
   margin-bottom: 150px;
 }
 
-.streamers{
-  padding-top: 15px;
-}
-
 .streamers-left{
   display: table;
   width: 40vw;
 }
+
 .streamers-left p{
   font-size: 25px;
   line-height: 40px;
@@ -470,6 +468,8 @@ h1{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 0;
+    width: auto;
   }
   .card-streamers h2{
     margin: 0;
@@ -485,13 +485,20 @@ h1{
   }
   .streamers ul{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 80vw;
     margin: 0;
     padding: 0;
   }
+
+  .url{
+    padding: 20px;
+  }
+
   .streamers-right{
     margin: 0;
+    padding: 0;
     width: 80vw;
   }
   .streamers-left p{
@@ -506,14 +513,14 @@ h1{
   }
   .streamers-whole{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     width: 80vw;
   }
   .card-streamers {
-      display: inline-table;
+      display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
   }
   .streamers {
@@ -543,7 +550,8 @@ h1{
   }
   .youtube-video{
     transform: scale(0.7);
-    margin: -50px;
+    margin: 0;
+    padding: 0;
   }
 }
 

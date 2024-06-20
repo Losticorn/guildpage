@@ -10,7 +10,7 @@ const streamers = [
   {
     id: 2,
     name: "Universalunicorn",
-    img: "/unitwitchlogoshort.png",
+    img: "/unitwitchlogoshort-small.png",
     url: "https://www.twitch.tv/universalunicorn",
   },
 ];
