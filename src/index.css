@@ -14,7 +14,7 @@ body{
   width: 80vw;
 }
 
-@media(max-width: 600px){
+@media(max-width: 640px){
   body{
     margin: 0;
     padding: 10vw;
@@ -39,7 +39,7 @@ body{
   z-index: 999;
 }
 
-@media (max-width: 600px){
+@media (max-width: 640px){
   .navbar {
     display: none;
   }
@@ -89,7 +89,7 @@ body{
   margin-left: 11vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .hero-section{
     padding: 0;
     width: 80;
@@ -115,7 +115,7 @@ body{
   margin-bottom: 0px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 640px) {
   .hero-section-left h1{
     margin-bottom: 20px;
     font-size: 40px;
@@ -131,7 +131,7 @@ body{
   width: auto;
 }
 
-@media(max-width: 600px){
+@media(max-width: 640px){
   .hero-section-left p{
     font-size: 20px;
   };
@@ -173,7 +173,7 @@ body{
   border: none;
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 640px) { 
   .hero-section-right{
     display: none;
   }
@@ -193,7 +193,7 @@ body{
   border-radius: 20px;
 }
 
-@media (max-width: 600px) { .pictures {display: none}}
+@media (max-width: 640px) { .pictures {display: none}}
 
 .about h1{
   padding-top: 40px;
@@ -207,7 +207,7 @@ body{
   line-height: 40px;
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 640px) { 
   .about h1{
     font-size: 40px;
     text-align: left;
@@ -237,7 +237,7 @@ body{
   line-height: 40px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .raiding
   {
     display: flex; 
@@ -261,7 +261,7 @@ body{
   margin-left: 50px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 640px){
   .raid-days{
     display: flex;
     flex-wrap: wrap;
@@ -320,10 +320,10 @@ h1{
 
 .recruitment .join-button{
   margin-top: 40px;
-  margin-left: 600px;
+  margin-left: 640px;
   width: 300px;
 }
-@media (max-width: 600px){
+@media (max-width: 640px){
   .recruitment p{
     font-size: 16px;
     line-height: 30px;
@@ -334,7 +334,7 @@ h1{
     font-size: 40px;
   }
 }
-@media (max-width: 600px){
+@media (max-width: 640px){
   .recruitment .join-button{
     margin-left: 0vw;
     width: 80vw;
@@ -387,7 +387,7 @@ h1{
   border-radius: 75px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 640px){
   .platforms p{
     width: 80vw;
     font-size: 16px;
@@ -466,7 +466,7 @@ h1{
   margin: 0;
 }
 
-@media(max-width: 600px){
+@media(max-width: 640px){
   .card-streamers{
     display: flex;
     flex-direction: column;
@@ -547,7 +547,7 @@ h1{
   font-size: 33px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 640px){
   .video{
     padding: 0;
     margin: 0;
@@ -610,7 +610,7 @@ h1{
   font-size: 25px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 640px){
   .contact h1{
     padding: 0;
     margin: 20px 0px;
