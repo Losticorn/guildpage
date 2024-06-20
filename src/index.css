@@ -541,6 +541,9 @@ h1{
 }
 
 .youtube-video{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 10px 15px;
 }
 .youtube-videos h2{
@@ -548,14 +551,8 @@ h1{
 }
 
 @media (max-width: 640px){
-  .video{
-    padding: 0;
-    margin: 0;
-  }
-  .youtube-video{
-    transform: scale(0.5);
-    margin: 0;
-    padding: 0;
+  .youtube-videos{
+    display: none;
   }
 }
 
@@ -624,6 +621,7 @@ h1{
   .contact-cards ul{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
     padding: 0;
   }
