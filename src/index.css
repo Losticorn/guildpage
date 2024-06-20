@@ -545,7 +545,7 @@ h1{
   flex-direction: column;
   flex-wrap: wrap;
   margin: 30px 50px;
-  border: 1px solid white;
+  border: 1px solid darkred;
 }
 .youtube-videos h2{
   font-size: 33px;
