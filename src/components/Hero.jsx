@@ -7,10 +7,9 @@ function Hero() {
       <div className="hero-section-left">
         <h1>Dirty Zuk & The Boyz</h1>
         <p>
-          Are you a World of Warcraft fan? <br /> Would you like to step up your
-          gaming experience? <br /> Are you up to playing with like-minded
-          people? <br /> You are at the right place! <br /> Come join us and get
-          your dirt on!
+          Are you a World of Warcraft fan? Would you like to step up your gaming
+          experience? Are you up to playing with like-minded people? <br /> You
+          are at the right place! Come join us and get your dirt on!
         </p>
         <JoinButton />
       </div>
