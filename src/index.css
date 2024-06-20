@@ -213,8 +213,9 @@ body{
     text-align: left;
   }
   .about p{
-    font-size: 20px;
-    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
   }
 }
 
@@ -247,9 +248,9 @@ body{
     font-size: 40px;
   }
   .raiding p{
-    width: auto;
-    font-size: 20px;
-    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
   }
 }
 
@@ -324,8 +325,9 @@ h1{
 }
 @media (max-width: 600px){
   .recruitment p{
-    width: auto;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
   }
   .recruitment h1{
     width: 80vw;
@@ -388,8 +390,9 @@ h1{
 @media (max-width: 600px){
   .platforms p{
     width: 80vw;
-    font-size: 20px;
-    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
   }
   .platforms h1{
     width: 80vw;
@@ -481,7 +484,6 @@ h1{
   }
   .streamers p{
     width: 80vw;
-    font-size: 20px;
   }
   .streamers ul{
     display: flex;
@@ -502,7 +504,9 @@ h1{
     width: 80vw;
   }
   .streamers-left p{
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
   }
   .twitchstreamers{
     margin: 0;
@@ -613,9 +617,9 @@ h1{
     font-size: 40px;
   }
   .contact p{
-    font-size: 20px;
-    line-height: 40px;
-    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
   }
   .contact-cards ul{
     display: flex;
