@@ -133,7 +133,9 @@ body{
 
 @media(max-width: 640px){
   .hero-section-left p{
-    font-size: 20px;
+    font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
   };
 }
 
