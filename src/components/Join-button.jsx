@@ -14,13 +14,12 @@ function JoinButton() {
 
 function JoinButton() {
   return (
-    <button className="join-button">
-      <a
-        href="https://apply.wowaudit.com/eu/ragnaros/dirty-zuk-and-the-boyz/main?preview"
-        target="_blank"
-      ></a>
-      Join us!
-    </button>
+    <a
+      href="https://apply.wowaudit.com/eu/ragnaros/dirty-zuk-and-the-boyz/main?preview"
+      target="_blank"
+    >
+      <button className="join-button">Join us!</button>
+    </a>
   );
 }
 

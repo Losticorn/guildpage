@@ -1,5 +1,5 @@
 import React from "react";
-import JoinButton from "./Join-button";
+import JoinButton from "./Join-button.jsx";
 
 function Hero() {
   return (
