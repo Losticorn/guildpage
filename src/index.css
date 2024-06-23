@@ -223,6 +223,10 @@ body{
   display: flex;
 }
 
+.raiding-section{
+  width: 40vw;
+}
+
 .recruitment .join-button{
   margin-top: 100px;
 }
