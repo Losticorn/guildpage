@@ -9,16 +9,8 @@ html{
 body{
   background-color: black;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-top: 0vw;
-  margin-left: 10vw;
-  width: 80vw;
-}
-
-@media(max-width: 640px){
-  body{
-    margin: 0;
-    padding: 10vw;
-  }
+  margin: 0;
+  padding: 0;
 }
 
 .url{
@@ -26,40 +18,34 @@ body{
   width: 221px;
 }
 
-.highlight-word-red{
-  color: darkred;
-  font-weight: bold;
-}
-
 .navbar{
   display: flex;
-  flex-grow: row;
+  position: fixed;
+  flex-direction: row;
   justify-content: center;
-  margin-top: 25px;
   z-index: 999;
-}
-
-@media (max-width: 640px){
-  .navbar {
-    display: none;
-  }
+  background-color: darkred;
+  width: 100%;
+  box-shadow: 0px 0px 100px black;
 }
 
 .navbar ul{
   display: flex;
   text-align: center;
   justify-content: center;
-  height: 66px;
-  box-shadow: 0px 0px 100px black;
+}
+
+.navbar li {
+  list-style: none;
 }
 
 .navbar a{
-  background-color: darkred;
   text-decoration: none;
-  cursor: pointer;
+  margin: 0;
+  padding: 10px 20px;
   color: white;
   font-size: 40px;
-  padding: 15px 25px;
+  border-radius: 25px;
 }
 
 .navbar a:hover{
@@ -67,45 +53,16 @@ body{
   color: white;
   transform: scale(1.1);
   transition: 0.2s ease-out;
-}
-
-.navbar ul li{
-  list-style: none;
-  font-weight: bold;
-  margin-top: 10px;
+  cursor: pointer;
 }
 
 .hero-section{
   display: flex;
   flex-direction: row;
-  padding-top: 100px;
+  padding-top: 8%;
+  width: 80%;
+  margin-left: 10%;
 }
-
-.hero-section-left{
-  margin-right: 25px;
-}
-
-.hero-section-left .join-button{
-  margin-left: 11vw;
-}
-
-@media (max-width: 640px) {
-  .hero-section{
-    padding: 0;
-    width: 80;
-  } 
-  .hero-section-left{
-    width: 80vw;
-    margin: 0;
-    padding: 0;
-  }
-  .hero-section-left .join-button{
-    margin-left: 0vw;
-    width: 80vw;
-    font-size: 30px;
-    padding: 10px 10px;
-  }
-} 
 
 .hero-section-left h1{
   font-size: 120px;
@@ -113,14 +70,12 @@ body{
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 0px;
+  width: 90%;
 }
 
-@media(max-width: 640px) {
-  .hero-section-left h1{
-    margin-bottom: 20px;
-    font-size: 40px;
-  };
-  
+.hero-section-left{
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-section-left p{
@@ -128,13 +83,7 @@ body{
   font-size: 27px;
   text-align: justify;
   line-height: 35px;
-  width: auto;
-}
-
-@media(max-width: 640px){
-  .hero-section-left p{
-    font-size: 16px;
-  };
+  width: 80%;
 }
 
 .join-button{
@@ -144,8 +93,7 @@ body{
   border-radius: 10px;
   background-color: darkred;
   color: white;
-  cursor: pointer;
-  margin-top: 50px;
+  
 }
 
 .join-button a{
@@ -153,10 +101,11 @@ body{
 }
 
 .join-button:hover{
-  transform: scale(1.2);
-  transition: 0.5s;
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
   background-color: white;
   color: darkred;
+  cursor: pointer;
 }
 
 .hero-section-right{
@@ -182,54 +131,94 @@ body{
   }
 }
 
+
+@media(max-width: 640px) {
+  .hero-section-left h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+  };
+  
+}
+@media(max-width: 640px){
+  .hero-section-left p{
+    font-size: 16px;
+  };
+}
+@media (max-width: 640px) {
+  .hero-section{
+    padding: 0;
+    width: 80;
+  } 
+  .hero-section-left{
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-section-left .join-button{
+    margin-left: 0vw;
+    width: 80vw;
+    font-size: 30px;
+    padding: 10px 10px;
+  }
+} 
 .pictures{
   display: flex;
   flex-grow: row;
   justify-content: space-between;
 }
 
-.about img{
-  height: 12vw;
-  border-radius: 20px;
+.about-section{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 6%;
 }
 
-@media (max-width: 640px) { .pictures {display: none}}
-
-.about h1{
-  padding-top: 40px;
+.about-section h1{
+  padding: 0px 0px;
   font-size: 60px;
   font-weight: bold;
 }
 
-.about p{
+.about-section img{
+  height: 12vw;
+  border-radius: 20px;
+}
+
+.about-section p{
   font-size: 25px;
   text-align: justify;
   line-height: 40px;
 }
 
 @media (max-width: 640px) { 
-  .about h1{
+  .about-section h1{
     font-size: 40px;
     text-align: left;
   }
-  .about p{
+  .about-section p{
     font-size: 16px;
     line-height: 30px;
     text-align: justify;
   }
 }
 
-.raiding{
-  display: flex;
-}
-
 .raiding-section{
-  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
 }
 
-.recruitment .join-button{
-  margin-top: 100px;
+
+.raid-days{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 50px;
 }
+
 
 .raiding h1{
   padding-top: 60px;
@@ -258,12 +247,6 @@ body{
   }
 }
 
-.raid-days{
-  display: flex;
-  margin-top: 235px;
-  text-align: center;
-  margin-left: 50px;
-}
 
 @media (max-width: 640px){
   .raid-days{
@@ -304,42 +287,48 @@ h1{
   font-weight: bold;
 }
 
-.recruitment h1{
+.recruitment-section{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+}
+
+
+.recruitment-section .join-button{
+  margin-top: 100px;
+}
+
+.recruitment-section h1{
   padding-top: 60px;
   font-size: 60px;
   font-weight: bold;
 }
 
-.recruitment p{
+.recruitment-section p{
   font-size: 25px;
   line-height: 40px;
   text-align: left;
 }
 
-.recruitment{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.recruitment .join-button{
+.recruitment-section .join-button{
   margin-top: 40px;
   margin-left: 640px;
   width: 300px;
 }
 @media (max-width: 640px){
-  .recruitment p{
+  .recruitment-section p{
     font-size: 16px;
     line-height: 30px;
     text-align: justify;
   }
-  .recruitment h1{
+  .recruitment-section h1{
     width: 80vw;
     font-size: 40px;
   }
 }
 @media (max-width: 640px){
-  .recruitment .join-button{
+  .recruitment-section .join-button{
     margin-left: 0vw;
     width: 80vw;
     font-size: 30px;
@@ -349,16 +338,20 @@ h1{
 
 /* PLATFORMS */
 
-.platforms{
-  margin-top: 15px;
+.platforms-section{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 5%;
 }
 
-.platforms h1{
+.platforms-section h1{
   font-size: 60px;
   font-weight: bold;
 }
 
-.platforms p{
+.platforms-section p{
   font-size: 25px;
   text-align: justify;
   line-height: 40px;
@@ -417,7 +410,22 @@ h1{
 }
 
 /* STREAMING */
-.streamers h1{
+.streamers-section{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 5%;
+}
+
+.streamers-section ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.streamers-section h1{
   padding-top: 60px;
 }
 
@@ -446,24 +454,11 @@ h1{
   margin-bottom: 150px;
 }
 
-.streamers-left{
-  display: table;
-  width: 40vw;
-}
-
-.streamers-left p{
+.streamers-section p{
   font-size: 25px;
   line-height: 40px;
   text-align: left;
 }
-
-.streamers-whole{
-  display: flex;
-  flex-grow: row;
-  margin-bottom: 50px;
-  justify-content: space-between;
-}
-
 .twitchlogo{
   height: 30px;
   padding: 0;
@@ -538,41 +533,41 @@ h1{
 
 /* YOUTUBE */
 
-.video{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.youtube-video{
+.youtube-section{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 30px 50px;
-  border: 1px solid darkred;
-}
-.youtube-videos h2{
-  font-size: 33px;
+  width: 80%;
+  margin-left: 10%;
 }
 
-@media (max-width: 640px){
-  .youtube-videos{
-    display: flex;
-    flex-direction: column;
-  }
-  .youtube-video{
-    width: 360px;
-  }
+.videos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+.youtube-video{
+  margin: 30px;
+  border: 1px solid darkred;
 }
 
 /* CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS CONTACTS */
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 5%;
+}
 
-.contact h1{
+.contact-section h1{
   font-size: 60px;
   font-weight: bold;
 }
 
-.contact p{
+.contact-section p{
   font-size: 25px;
   text-align: justify;
   line-height: 40px;
@@ -598,9 +593,7 @@ h1{
   display: inline-block;
   text-align: center;
   border-radius: 10px;
-  padding: 15px;
-  margin: 15px;
-  max-width: 250px;
+  margin: 30px;
 }
 
 .card:hover{

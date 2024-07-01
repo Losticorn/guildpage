@@ -1,4 +1,5 @@
 import React from "react";
+import CardRaidDay from "./Card-raid-day";
 
 function Raiding() {
   return (
@@ -19,6 +20,7 @@ function Raiding() {
             ensures a smooth progression.
           </p>
         </div>
+        <CardRaidDay></CardRaidDay>
       </div>
     </section>
   );

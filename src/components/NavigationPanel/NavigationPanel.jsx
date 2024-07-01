@@ -49,7 +49,7 @@ const NavigationItemsList = ({ name, navigation }) => {
 function Navigation() {
   return (
     <nav className="navbar">
-      <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+      <ul>
         {navigationItems.map((navigationItem) => (
           <NavigationItemsList {...navigationItem} key={navigationItem.id} />
         ))}

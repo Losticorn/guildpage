@@ -3,7 +3,7 @@ import JoinButton from "./Join-button";
 
 function Recruitment() {
   return (
-    <section id="recruitment" className="recruitment">
+    <section id="recruitment" className="recruitment-section">
       <h1>Are you a good fit?</h1>
       <p>
         We aim to grow our guild with active players who thrive in an
