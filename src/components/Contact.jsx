@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./Card-contacts";
 
 function Contact() {
   return (
@@ -14,6 +15,7 @@ function Contact() {
         adjustments. Kazz and Buffed assists with raid preparations, boosting
         and manage guild affairs. We look forward to hearing from you!
       </p>
+      <Card></Card>
     </section>
   );
 }

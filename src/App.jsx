@@ -25,9 +25,6 @@ function App() {
       <Streamers></Streamers>
       <YoutubeVideos></YoutubeVideos>
       <Contact></Contact>
-      <section className="contact-cards">
-        <Card></Card>
-      </section>
       <BackToTopButton></BackToTopButton>
       <Footer></Footer>
     </>
